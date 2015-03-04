@@ -340,6 +340,11 @@ public class WithMarkersMapPackFragment extends MapPackFragment {
         }
     }
 
+    // getMarkersCount(): int
+    public int getMarkersCount(){
+        return mDataToMarker.size();
+    }
+
     public LatLng interpolateToBottom(LatLng latLng, double fraction) throws GoogleMap.MapException {
         if (SHOW_LOGS) Log.d(TAG, String.format("interpolateToBottom from=%s fraction=%f",
                 latLng, fraction));
