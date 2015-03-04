@@ -33,7 +33,7 @@ public interface Marker {
     public void setDraggable(boolean draggable);
 
     public boolean isDraggable();
-//
+
     public void showInfoWindow();
 
     public void hideInfoWindow();
