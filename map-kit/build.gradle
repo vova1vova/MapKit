@@ -1,7 +1,7 @@
 ext {
     PUBLISH_GROUP_ID = 'com.snaprix'
     PUBLISH_ARTIFACT_ID = 'map-kit'
-    PUBLISH_VERSION = '2015.04.11'
+    PUBLISH_VERSION = '2015.12.07'
     PUBLISH_REPOSITORY = rootProject.ext.localRepository
 }
 
@@ -14,8 +14,8 @@ android {
     defaultConfig {
         minSdkVersion 10
         targetSdkVersion 22
-        versionCode 16
-        versionName "2015.04.11"
+        versionCode 17
+        versionName "2015.12.07"
     }
 
     compileOptions {
@@ -26,14 +26,14 @@ android {
 
 dependencies {
     ext {
-        supportVersion = '22.0.0'
-        playServicesVersion = '7.0.0'
+        supportVersion = '22.2.1'
+        playServicesVersion = '8.3.0'
     }
 
     compile "com.android.support:support-v4:${supportVersion}"
     compile "com.google.android.gms:play-services-maps:${playServicesVersion}"
 
-    compile 'com.google.maps.android:android-maps-utils:0.3.2'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
     compile 'com.nokia:x-here-maps-wrapper-v2:1.0.3'
 }
 
